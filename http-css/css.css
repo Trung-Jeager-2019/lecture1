@@ -1,0 +1,84 @@
+ul{
+	margin: 20px;
+	font-size: 14px;
+	color: red;
+}
+
+ol{
+	margin: 30px;
+	font-size: 18px;
+	color: blue;
+}
+
+
+.row > div{
+	padding: 20px;
+	background-color: blue;
+	border: 2px solid black;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.container > div{
+	background-color:springgreen;
+	font-size: 20px;
+	margin: 20px;
+	padding: 20px;
+	width: 100px
+}
+.grid{
+	background-image: url(aa.jpg);
+	display: grid;
+	padding: 10px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-rows: : auto auto auto; 
+}
+
+.grid-item{
+	background-color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;	
+}
+
+.alert{
+	margin: 20px;
+}
+
+@media (min-width: 500){
+	body{
+		background-color:green;
+	}
+}
+
+@media (max-width: 499){
+	body{
+		background-color:yellow;
+	}
+}
+
+p::selection{
+	color: red;
+	background-color: yellow;
+}
+@media print{
+	.screen-only{
+		display: none;
+	}
+}
+
+
+@media (max-width: 499){
+	h1::before  {
+		content: "welcome";
+	}
+}
+
+
+@media (min-width: 500){
+	h1::before  {
+		content: "Welcome to my website";
+	}
+}
